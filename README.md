@@ -26,11 +26,11 @@ open the vr and type vagrant up the vagrant ssh
 
 Run The application within the VM by typing into the Terminal :-
 
-* python ```/vagrant/catalog/dadtabase_setup.py``` . 
+* ```python /vagrant/catalog/dadtabase_setup.py``` . 
 
-* python ```/vagrant/catalog/lotsofmenus.py``` . 
+* ```python /vagrant/catalog/lotsofmenus.py``` . 
 
-* python ```/vagrant/catalog/project.py``` . 
+* ```python /vagrant/catalog/project.py``` . 
 
 Access and test your application by visiting http://localhost:8000 locally on your browser.
 
