@@ -22,7 +22,7 @@ class Restaurant(Base):
     name = Column(String(250), nullable=False)
     user_id = Column(Integer, ForeignKey('user.id'))
     user = relationship(User, cascade="save-update")
-    user = relationship(User, cascade="all, delete-orphan")
+    user = relationship(User, cascade="all, delete-orphan", on-delete="True")
 
     @property
     def serialize(self):
@@ -43,9 +43,9 @@ class MenuItem(Base):
     price = Column(String(8))
     course = Column(String(250))
     restaurant_id = Column(Integer, ForeignKey('restaurant.id'))
-    restaurant = relationship(Restaurant)
+    restaurant = relationship(Restaurant, on-delete="True")
     user_id = Column(Integer, ForeignKey('user.id'))
-    user = relationship(User)
+    user = relationship(User, on-delete="True")
 
     @property
     def serialize(self):
