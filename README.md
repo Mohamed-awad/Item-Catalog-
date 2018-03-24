@@ -34,5 +34,4 @@ Run The application within the VM by typing into the Terminal :-
 
 Access and test your application by visiting http://localhost:8000 locally on your browser.
 
-# That's It Cool
 
